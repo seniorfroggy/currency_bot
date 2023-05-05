@@ -2,7 +2,7 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import telebot
-from config import TOKEN, CBR_LINK
+from config import CBR_LINK
 from constants import DELTA
 from datetime import datetime
 import xmltodict
@@ -11,6 +11,9 @@ from sqlite import databasetrace, getdatabase
 from telebot import types 
 import json
 import urllib
+import os
+
+TOKEN = os.environ['BOT_TOKEN']
 bot = telebot.TeleBot(TOKEN)
 
 def check_for_surges(result, previous_date_result):
