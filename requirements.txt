@@ -1,0 +1,8 @@
+matplotlib
+telebot
+datetime
+xmltodict
+time
+sqlite
+json
+urllib
